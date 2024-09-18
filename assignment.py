@@ -81,3 +81,7 @@ print(data['company']['departments'][0]['employees'][0]['projects'][1]['status']
 
 # Add a new project {'name': 'Epsilon', 'status': 'planned'} to Bob's list of
 # projects.
+
+new_project= {'name': 'Epsilon', 'status': 'planned'}
+data['company']['departments'][0]['employees'][1]['projects'].append(new_project)
+print(data['company']['departments'][0]['employees'][1]['projects'])
